@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="home.css">
+    
+
+    <img src="banner.jpg" style="height:150px ; width:1340px ; object-fit:cover;">
+    
+    <nav id="navigation">
+        <ul id="nav">
+            <a href="home.html" style="margin-left: 800px;">Home </a>
+            <a href="coffee.html" style="margin-left: 100px;">Coffee</a>
+            <a href="shop.html" style="margin-left: 100px;">Shop </a>
+            <a href="about.html" style="margin-left: 100px;">About </a>
+            
+            
+        </ul>
+    </nav>
+
+ <img src="coffee1.png" >
+<h3>Title 1</h3>
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lectus urna,
+    viverra in luctus quis, ullamcorper quis lorem. Vestibulum vulputate pellentesque
+    velit, et placerat dolor pulvinar in. Class aptent taciti sociosqu ad litora torquent
+    per conubia nostra, per inceptos himenaeos. Sed sit amet velit at purus elementum
+    dapibus. Nulla dapibus auctor vulputate. Sed cursus nisi at mauris mollis semper.
+    Vestibulum consectetur cursus dui sit amet pretium.
+</p>
+
+<img src="coffee2.png">
+<h3>Title 2</h3>
+<p>
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+    himenaeos. Donec porttitor placerat nunc a consectetur. Ut fermentum eleifend molestie.
+    Donec fermentum risus sit amet ante cursus cursus. In hac habitasse platea dictumst.
+    Praesent semper ante ut felis molestie aliquet. Nam quis dui a magna molestie blandit
+    id et justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+    per inceptos himenaeos. Sed felis mauris, mattis a vulputate a, gravida nec metus.
+    Vivamus elit augue, ullamcorper eget scelerisque vitae, tincidunt eget lorem. Curabitur
+    id nibh libero, sed pulvinar nisi. Curabitur ultrices, neque in dignissim viverra,
+    justo nisl dignissim magna, a tempor eros turpis in diam. Suspendisse potenti. Sed
+    tincidunt est ac elit bibendum nec varius ante vestibulum.
+</p>
+
+<img src="coffee3.png" >
+<h3>Title 3</h3>
+<p>
+    In hac habitasse platea dictumst. In purus leo, consequat nec porta a, varius sed
+    dui. Nulla placerat mollis tincidunt. Praesent at elit mi, a posuere quam. Suspendisse
+    vel leo eu orci lacinia vestibulum. Fusce vel sem fermentum lectus tempus ultrices.
+    Morbi arcu sem, rhoncus sit amet rutrum eget, interdum sit amet leo. Ut mattis lorem
+    vitae dolor tincidunt mattis a lacinia velit. Cras sed nibh at urna imperdiet laoreet
+    quis a risus.
+</p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="home.css" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
